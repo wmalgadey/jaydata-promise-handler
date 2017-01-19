@@ -1,4 +1,3 @@
-/// <reference path="../typings/tsd.d.ts" />
 import { IPromise, CallbackSettings, PromiseHandlerBase } from './promiseHandlerBase';
 export declare class PromiseHandler extends PromiseHandlerBase {
     private resolve;

@@ -1,4 +1,3 @@
-/// <reference path="../typings/tsd.d.ts"/>
 import * as extend from 'extend';
 import { Guard, Exception } from 'jaydata-error-handler';
 
@@ -46,7 +45,6 @@ export class PromiseHandlerBase{
 	static defaultNotifyCallback(){}
 	static defaultErrorCallback(){
 		if (arguments.length > 0 && arguments[arguments.length - 1] && typeof arguments[arguments.length - 1].reject === 'function'){
-			(console.error || console.log).call(console, arguments[0]);
 			arguments[arguments.length - 1].reject.apply(arguments[arguments.length - 1], arguments);
 		}else{
 			if (arguments[0] instanceof Error){

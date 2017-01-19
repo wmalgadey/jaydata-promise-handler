@@ -1,4 +1,3 @@
-/// <reference path="../typings/tsd.d.ts" />
 export interface IPromise {
     always: Function;
     done: Function;

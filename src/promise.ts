@@ -1,4 +1,3 @@
-/// <reference path="../typings/tsd.d.ts"/>
 import * as extend from 'extend';
 import { IPromise, CallbackSettings, PromiseHandlerBase, PromiseNotImplemented } from './promiseHandlerBase';
 
